@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Root Activity Launcher</string>
+    <string name="title_section_all">All activities</string>
+    <string name="title_dialog_disclaimer">Disclaimer</string>
+    <string name="title_dialog_icon_picker">Pick an icon</string>
+    <string name="dialog_progress_loading">Loading…</string>
+    <string name="dialog_disclaimer">This is based on DerekZiemba\'s fork of Adam Szalkowski\'s Activity Launcher.\n\nThe original RootActivityLauncher crashed on all devices running Android 8 or later and was abandoned in 2015.\nThis project has been fully rewritten in Kotlin and modernized to support later Android versions.\n\nUse this software at your own risk. Some apps might not behave as expected when their activities are launched in the wrong context leading to data loss or even worse. You have been warned. Do you understand this and still want to use this software?</string>
+    <string name="context_action_launch">Launch activity</string>
+    <string name="context_action_shortcut">Create shortcut</string>
+    <string name="context_action_edit">Edit shortcut</string>
+    <string name="label_name">Name</string>
+    <string name="label_package">Package</string>
+    <string name="label_class">Class</string>
+    <string name="label_icon">Icon</string>
+    <string name="starting_activity">Starting activity: %s</string>
+    <string name="starting_application">Starting application: %s</string>
+    <string name="creating_activity_shortcut">Creating activity shortcut for %s</string>
+    <string name="creating_application_shortcut">Creating application shortcut for %s</string>
+    <string name="error">Error</string>
+    <string name="error_tasks">Error loading task list</string>
+    <string name="error_icons">Error loading icons</string>
+    <string name="error_invalid_icon_resource">Error: invalid icon resource</string>
+    <string name="error_invalid_icon_format">Error: invalid icon format</string>
+    <string name="action_view_source">View on GitHub</string>
+    <string name="error_verbose_pin_shortcut">Current launcher does not support "PinShortcut". Unable to create shortcut.</string>
+    <string name="error_pin_shortcut">Failed to create shortcut</string>
+    <string name="root_timeout">Root request timed out</string>
+    <string name="root_denied">Fatal: Root access denied</string>
+    <string name="root_unavailable">Fatal: Root is not available on your device</string>
+</resources>

@@ -1,36 +1,26 @@
-apply plugin: 'com.android.application'
-android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.2"
-    defaultConfig {
-        applicationId 'localhost.derekziemba.activitylauncher'
-        minSdkVersion 19
-        targetSdkVersion 22
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.4.10'
+    repositories {
+        google()
+        jcenter()
     }
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-            zipAlignEnabled true
-            renderscriptOptimLevel 3
-        }
-        optimized {
-            minifyEnabled true
-        }
-        debug {
-            debuggable false
-            minifyEnabled true
-        }
-    }
-    productFlavors {
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
-dependencies {
-    compile 'com.android.support:support-v4:23.1.1'
-    compile files('libs/RootShell.jar')
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
