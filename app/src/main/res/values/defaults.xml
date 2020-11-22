@@ -1,3 +1,4 @@
 <resources>
     <string name="url_source" translatable="false">https://github.com/ThePBone/RootActivityLauncher</string>
+    <string name="url_original" translatable="false">https://play.google.com/store/apps/details?id=de.szalkowski.activitylauncher</string>
 </resources>
